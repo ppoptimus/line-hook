@@ -30,9 +30,9 @@ app.listen(port, () => {
 
 //-------------------------------------------------//
 app.get("/", (req, res) => {
-  res.statusCode = 302;
-  res.setHeader("Location", "http://watafak88.com");
-  res.end();
+  res.send({
+      "Status":"Connected"
+  })
 });
 
 app.post("/", async (req, res) => {
