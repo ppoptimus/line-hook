@@ -1,0 +1,23 @@
+{
+  "name": "line-hook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "firebase": "^8.6.0",
+    "firebase-admin": "^9.8.0",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
