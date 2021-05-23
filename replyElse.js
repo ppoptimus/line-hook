@@ -1,11 +1,11 @@
 const request = require("request-promise");
 
-const replyElse = (req, LINE_MESSAGING_API, LINE_HEADER) => {
+const replyElse = (event, LINE_MESSAGING_API, LINE_HEADER) => {
     return request.post({
         uri: `${LINE_MESSAGING_API}/reply`,
         headers: LINE_HEADER,
         body: JSON.stringify({
-            replyToken: req.body.events[0].replyToken,
+            replyToken: event.replyToken,
             messages: [
                 {
                     type: "text",
