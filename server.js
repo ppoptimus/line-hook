@@ -16,7 +16,7 @@ const greetingFollow = require('./greetingFollow')
 const gerateText = require('./gereateWordReply')
 
 //-----------------------Set port---------------------------//
-const port = process.env.port || 3001
+const port = process.env.port || 4000
 
 let LINE_CHANNEL_SECRET = ''
 let LINE_HEADER = ''
